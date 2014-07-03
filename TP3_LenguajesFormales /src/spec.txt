@@ -1,0 +1,52 @@
+Requerimientos para el TP3
+==========================
+
+- el programa solo acepta tipo de datos enteros (int) 
+- las variables pueden o no estar inicializadas, las no inicializadas, se cargan con 0, la palabra "int" debe preceder a la declaración. 
+	- ejemplo: ((int a = 5) (int c = 8) (int x) (int tot = 0) (int w y j = 22))
+- las funciones de entrada/salida serán printf y scanf, solo reciben un parámetro
+- asignaciones posibles:
+	- <var> = <exp> -> (<var> = <exp>)
+	- <var> op= <exp> -> (<var> op= <var>)
+	- ++<var> -> (<var> ++)
+	- --<var> -> (<var> --)
+	- <var>++ -> (++ <var>)
+	- <var>-- -> (-- <var>)
+- no pueden existir asignaciones en expresiones, para evitar efectos colaterales
+	- ej: esto está prohibido: (printf (a++))
+- el if toma la siguiente estructura:
+	(if (<cond>)
+	  ( (  )
+		(  )
+		(  ) )
+	[else 
+	  ( (  )
+		(  )
+		(  ) )] ) 
+- el while toma la siguiente estructura:
+	(while (<cond>)
+	  ( (  )
+		(  )
+		(  ) ) )
+
+- Ejemplo de un programa:
+(
+(int i j) ; declaración de variables i=0, j=0
+(int k) ; declaración de variables, k=0
+	(main 	( ; comienzo del programa
+			(scanf k)
+			(i = 1)
+			(while (i < k)
+				( (printf i)
+				  (i ++)
+				  (if (i == 3)
+					((printf 3))
+				
+			 	  )
+				)
+			)
+			(printf k)
+		)
+	)
+)
+
